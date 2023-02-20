@@ -32,21 +32,21 @@ async def slashd6(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, ephemeral = False)
 
 @tree.command(guild = discord.Object(id=id_do_servidor), name = 'd8', description='Rola um dado de 8 lados')
-async def slashd6(interaction: discord.Interaction):
+async def slashd8(interaction: discord.Interaction):
     embed = discord.Embed(title="Resultado do D8", description=(
         random.randint(1, 8)), color=(0xF85252))
     await interaction.response.send_message(embed=embed, ephemeral = False)
 
 
 @tree.command(guild = discord.Object(id=id_do_servidor), name = 'd10', description='Rola um dado de 10 lados')
-async def slashd6(interaction: discord.Interaction):
+async def slashd10(interaction: discord.Interaction):
     embed = discord.Embed(title="Resultado do D10", description=(
         random.randint(1, 10)), color=(0xF85252))
     await interaction.response.send_message(embed=embed, ephemeral = False)
 
 
 @tree.command(guild = discord.Object(id=id_do_servidor), name = 'd12', description='Rola um dado de 12 lados')
-async def slashd20(interaction: discord.Interaction):
+async def slashd12(interaction: discord.Interaction):
     embed = discord.Embed(title="Resultado do D12", description=(
         random.randint(1, 12)), color=(0xF85252))
     await interaction.response.send_message(embed=embed, ephemeral = False)
@@ -59,7 +59,7 @@ async def slashd20(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, ephemeral = False)
 
 @tree.command(guild = discord.Object(id=id_do_servidor), name = 'd100', description='Rola um dado de 100 lados')
-async def slashd20(interaction: discord.Interaction):
+async def slash100(interaction: discord.Interaction):
     embed = discord.Embed(title="Resultado do D100", description=(
         random.randint(1, 100)), color=(0xF85252))
     await interaction.response.send_message(embed=embed, ephemeral = False)
